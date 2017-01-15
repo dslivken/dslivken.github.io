@@ -1,0 +1,57 @@
+/* This is a css file */
+p.columns-test{
+	color: blue;
+	column-count: 1;
+}
+
+@media only screen and (min-width: 480px) {
+	p.columns-test {
+		column-count: 2;
+	}
+}
+
+@media only screen and (min-width: 960px) {
+	p.columns-test {
+		column-count: 3;
+	}
+}
+
+.wrapper {
+	width: 960px;
+}
+
+@media only screen and (max-width: 960px) {
+	.wrapper {
+		width: 90%;
+	}
+}
+
+.col-1 {
+	float:left;
+	background: yellow;
+	margin-left: 4%;
+	width: 22%;
+}
+
+.first {
+	margin-left: 0;
+}
+
+
+@media only screen and (max-width: 600px) {
+	.col-1 {
+		width: 48%;
+	}
+	.left-side {
+		margin-left: 0;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.col-1 {
+		width: 100%;
+		float: none;
+		margin-left: 0;
+		margin-bottom: 5px;
+	}
+}

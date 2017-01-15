@@ -1,1 +1,29 @@
-Hello World
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello World</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<p>Hello World!</p>
+	</header>
+
+	<section class="wrapper">
+		<section class = "blog_entry">
+			<h3>January 14, 2017</h3>
+			<p>For my first blog entry, I am going to quickly walk through the CLI Data Gem project I just finished. The assignment was to create a CLI that pulled an initial set of data from a web page, and then provided data from a secondary web page based on user input.</p>
+			<p>The website I picked was http://www.globusjourneys.com/. I wanted to return a set of tours based on user input and then let the user see additional details for the tour of their choice.</p>
+			<p>I set up the initial scrape in a Scraper class. This was fairly routine, but because results included tours from mulitple companies I did use logic to insert a "brand" attribute based on the link related to each tour. I also set up a print method in the same class.</p>
+			<p>I wanted to set up a second Tour class to deal with scraping the follow-up pages, but I didn't want to have to re-scrape the initial results because they could take a long time, so one of the challenges I had was just figuring out how to pass the information to the Tour class. I also had to do a bunch of work to figure out how to scrape tours from different companies differently, but return results from all tours in the same format so that my #print_tour method worked consistently for all tours. (There was a lot of testing .css formulas via pry!)
+			</p>
+			<p>I also added various error handling and messaging to try and make the user experience fairly friendly - hopefully it is!</p>
+			<p>That's it for this project!</p>
+		</section>
+
+
+	</section>
+
+
+</body>
+</html>
